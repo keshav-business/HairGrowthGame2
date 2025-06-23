@@ -1516,7 +1516,12 @@ self.C3_ExpressionFuncs = [
 			return () => (n0.ExpObject() - 20);
 		},
 		() => "https://testsoftware.in/beauty-m911/landing-page/",
+		() => "border",
+		() => "3px solid  transparent",
+		() => "background",
+		() => "transparent",
 		() => 1.5,
+		() => 0.8,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const f1 = p._GetNode(1).GetBoundMethod();
@@ -1536,6 +1541,24 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const n0 = p._GetNode(0);
+			return () => n0.ExpObject("player_id");
+		},
+		() => "Content-Type",
+		() => "application/json",
+		() => "submit-score",
+		() => "https://ubuntu.tail2124eb.ts.net/g2/save-score",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			const v1 = p._GetNode(1).GetVar();
+			return () => (and((((((("{" + "\"player_id\"") + ":") + v0.GetValue()) + ",") + "\"score\"") + ":"), v1.GetValue()) + "}");
+		},
+		() => "PATCH",
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => ("Data" + f0());
+		},
+		p => {
+			const n0 = p._GetNode(0);
 			return () => ("0" + n0.ExpObject());
 		},
 		() => 3000,
@@ -1550,25 +1573,13 @@ self.C3_ExpressionFuncs = [
 		() => 4000,
 		() => 7.5,
 		() => 5000,
-		p => {
-			const n0 = p._GetNode(0);
-			return () => n0.ExpObject("player_id");
-		},
-		() => "Content-Type",
-		() => "application/json",
-		() => "save-score",
-		() => "https://ubuntu.tail2124eb.ts.net/g2/save-score",
+		() => "submit-associate",
+		() => "https://ubuntu.tail2124eb.ts.net/g2/submit-associate",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			const v1 = p._GetNode(1).GetVar();
 			const v2 = p._GetNode(2).GetVar();
-			const v3 = p._GetNode(3).GetVar();
-			return () => (and((and((and((("{\"player_id\":\"" + v0.GetValue()) + "\",\"score\":"), v1.GetValue()) + ",\"rating\":"), v2.GetValue()) + ",\"discount\":"), v3.GetValue()) + "}");
-		},
-		() => "PATCH",
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => ("Data" + f0());
+			return () => (and((and((("{\"player_id\":\"" + v0.GetValue()) + "\",\"rating\":"), v1.GetValue()) + ",\"discount\":"), v2.GetValue()) + "}");
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -1583,11 +1594,7 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() + 50);
 		},
-		() => "border",
 		() => "3px solid  yellow",
-		() => "3px solid  transparent",
-		() => "background",
-		() => "transparent",
 		() => "submit_user",
 		() => "https://ubuntu.tail2124eb.ts.net/g2/submit",
 		p => {
@@ -1597,6 +1604,11 @@ self.C3_ExpressionFuncs = [
 			return () => (and((((("{\"name\":\"" + v0.GetValue()) + "\",\"email\":\"") + v1.GetValue()) + "\",\"phone\":\""), v2.GetValue()) + "\"}");
 		},
 		() => "POST",
+		() => "submit",
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject("id");
+		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const n1 = p._GetNode(1);
