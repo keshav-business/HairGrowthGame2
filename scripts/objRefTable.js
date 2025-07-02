@@ -17,6 +17,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Json,
 		C3.Plugins.TextBox,
 		C3.Plugins.Button,
+		C3.Behaviors.Sin,
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.TiledBg.Acts.SetPos,
@@ -126,7 +127,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Exps.len,
 		C3.Plugins.TextBox.Cnds.OnTextChanged,
 		C3.Plugins.System.Exps.regexreplace,
-		C3.Plugins.System.Exps.find
+		C3.Plugins.System.Cnds.RegexTest,
+		C3.Plugins.Sprite.Acts.SetWidth,
+		C3.Plugins.System.Exps.min,
+		C3.Plugins.Sprite.Exps.Width,
+		C3.Plugins.Browser.Acts.RequestFullScreen
 	];
 };
 self.C3_JsPropNameTable = [
@@ -232,6 +237,12 @@ self.C3_JsPropNameTable = [
 	{RateUs: 0},
 	{Text6: 0},
 	{Button3: 0},
+	{Bar_2: 0},
+	{Sine: 0},
+	{DermaQuest_Splash: 0},
+	{Bar_: 0},
+	{Bar_3: 0},
+	{TextInput2: 0},
 	{TFamily: 0},
 	{currentTime: 0},
 	{Email: 0},
@@ -335,5 +346,10 @@ self.InstanceType = {
 	RateUs: class extends self.ITextInstance {},
 	Text6: class extends self.ITextInstance {},
 	Button3: class extends self.IButtonInstance {},
+	Bar_2: class extends self.ISpriteInstance {},
+	DermaQuest_Splash: class extends self.ISpriteInstance {},
+	Bar_: class extends self.ISpriteInstance {},
+	Bar_3: class extends self.ISpriteInstance {},
+	TextInput2: class extends self.ITextInputInstance {},
 	TFamily: class extends self.ISpriteInstance {}
 }
